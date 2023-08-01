@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // Importa el almacenamiento que deseas utilizar (puede ser localStorage, sessionStorage, etc.)
+import storage from 'redux-persist/lib/storage';
 import contactsReducer from './reducer';
 
 const persistConfig = {
-  key: 'root', // La clave para el almacenamiento en el que se guardarán los datos. Puedes cambiarla si es necesario.
+  key: 'root',
   storage,
 };
 
